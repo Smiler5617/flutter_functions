@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         home: Home(),
         routes: <String, WidgetBuilder>{
           '/login': (_) => Login(),
-          '/roomselect': (_) => Home(),
+          '/home': (_) => Home(),
         },
       );
     } else {
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         home: Login(),
         routes: <String, WidgetBuilder>{
           '/login': (_) => Login(),
-          '/roomselect': (_) => Home(),
+          '/home': (_) => Home(),
         },
       );
     }
