@@ -23,6 +23,13 @@ class _RegistrationState extends State<Registration> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("アカウント作成"),
+        backgroundColor: Colors.blue,
+        centerTitle: true,
+        elevation: 0.0,
+      ),
+      
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
