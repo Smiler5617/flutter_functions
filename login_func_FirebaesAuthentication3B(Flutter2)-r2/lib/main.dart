@@ -13,7 +13,7 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    if (FirebaseAuth.instance.currentUser != null) {
+    if (FirebaseAuth.instance.currentUser != null && FirebaseAuth.instance.currentUser!.emailVerified) {
       return MaterialApp(
         title: 'Firebase Auth',
         home: Home(),
